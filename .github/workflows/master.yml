@@ -23,9 +23,6 @@ jobs:
       - name: Install Composer Dependencies
         run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
-      - name: Generate Key
-        run: php artisan key:generate
-
       - name: Use Node.js 14
         uses: actions/setup-node@v2-beta
         with:
