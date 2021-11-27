@@ -29,7 +29,9 @@ jobs:
           node-version: '14'
 
       - name: run laravel mix
-        run: npm run prod
+        run:
+          npm install
+          npm run prod
 
       - name: Create zipped vendor directory
         uses: montudor/action-zip@v0.1.0
